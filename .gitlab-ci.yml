@@ -6,9 +6,8 @@ build_job:
   only:
   - branches
   script:
-  - cd "D:\PMY C\pmy"
-  - "D:\PMY C\nuget\nuget.exe" restore
-  - "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBuild.exe" pmy.sln
+  - 'D:\PMY_C\nuget\nuget.exe restore'
+  - 'cmd /c "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBuild.exe" pmy.sln'
   artifacts:
     paths:
-    - pmy\pmy\bin\Debug\pmy.exe
+    - pmy/bin/Debug/pmy.exe
